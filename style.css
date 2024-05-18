@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+/* Start Header */
+
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #3498db;
+    padding: 25px 25px;
+    margin: 25px 55px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #2196F3;
+    color: #FFF;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+
+/* Close Header */
+
+/* Start Cards */
+
+
+.Cards{
+    margin: 0  20px;
+}
+
+.Cards .Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Cards .Content .Card{
+    width: calc(100% / 5 - 99px);
+    margin: 20px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+
+.Cards .Card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid #2196F3;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.Cards .Card .face.on{
+    display: flex;
+}
+
+.Cards .Card .face.off{
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+}
+
+.Cards .Card .face.off::before{
+    content: "!";
+    position: absolute;
+    font-size: 110px;
+    font-weight: bold;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-75%, -73%);
+    top: 30%;
+}
+
+.Cards .Card.flip{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.Cards .Card .face.on img{
+    width: calc(100% - 50px);
+    padding: 25px;
+}
+/* End Cards */
+
+/* Start Footer */
+
+.Footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0 0;
+    background-color: #2196F3;
+    padding: 25px 0;
+    font-size: 25px;
+    color: #FFF;
+}
+
+/* End Footer */

@@ -1,0 +1,9 @@
+[1] ===> make hello message with fetch name by prompt js  
+[2] ===> make score message 
+[3] ===> make cards with 2 faces "?" , "image"
+[4] ===> make cards random
+[5] ===> make counter every click on card
+[6] ===> make limit to click on card "2 click maximum"
+[7] ===> when click third click - all cards is clicked will rotate to "?"
+[8] ===> if 2 duplicated card is clicked increase card 1 and remove it
+[9] ===> when all cards removed print win message
